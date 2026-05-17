@@ -1,7 +1,8 @@
 // Cobig Tour - Main JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
-  lucide.createIcons();
+  // Initialize Lucide icons after paint
+  requestAnimationFrame(function() { lucide.createIcons(); });
 
   // 1. Sticky nav
   const nav = document.getElementById('nav');
@@ -113,3 +114,64 @@ document.addEventListener('DOMContentLoaded', function() {
     img.addEventListener('error', function() { this.style.display = 'none'; this.parentElement.classList.add('img-fallback'); });
   });
 });
+
+
+// Package carousel (mobile)
+(function() {
+  var track = document.getElementById('paket-track');
+  var dots = document.getElementById('paket-dots');
+  var prev = document.getElementById('paket-prev');
+  var next = document.getElementById('paket-next');
+  if (!track || !dots) return;
+  var cards = track.children;
+  var current = 0;
+  var total = cards.length;
+
+  // Create dots
+  for (var i = 0; i < total; i++) {
+    var dot = document.createElement('span');
+    dot.className = 'w-3 h-3 rounded-full bg-navy-300 border border-navy-400 transition-colors cursor-pointer';
+    dot.dataset.index = i;
+    dot.addEventListener('click', function() { goTo(+this.dataset.index); });
+    dots.appendChild(dot);
+  }
+
+  function goTo(idx) {
+    current = Math.max(0, Math.min(idx, total - 1));
+    if (window.innerWidth < 768) {
+      var card = cards[current];
+      var offset = card.offsetLeft;
+      track.style.transform = 'translateX(-' + offset + 'px)';
+    }
+    var allDots = dots.children;
+    for (var j = 0; j < allDots.length; j++) {
+      allDots[j].className = j === current
+        ? 'w-3 h-3 rounded-full bg-gold-500 transition-colors cursor-pointer'
+        : 'w-3 h-3 rounded-full bg-navy-300 border border-navy-400 transition-colors cursor-pointer';
+    }
+  }
+
+  prev.addEventListener('click', function() { goTo(current - 1); });
+  next.addEventListener('click', function() { goTo(current + 1); });
+
+  // Touch swipe
+  var startX = 0, diffX = 0;
+  track.addEventListener('touchstart', function(e) { startX = e.touches[0].clientX; });
+  track.addEventListener('touchmove', function(e) { diffX = e.touches[0].clientX - startX; });
+  track.addEventListener('touchend', function() {
+    if (diffX > 50) goTo(current - 1);
+    else if (diffX < -50) goTo(current + 1);
+    diffX = 0;
+  });
+
+  // Reset on resize
+  window.addEventListener('resize', function() {
+    if (window.innerWidth >= 768) {
+      track.style.transform = '';
+    } else {
+      goTo(current);
+    }
+  });
+
+  goTo(0);
+})();

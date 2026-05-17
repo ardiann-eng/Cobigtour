@@ -14,13 +14,13 @@
 #nav { transition: background-color .3s, backdrop-filter .3s, border-color .3s, box-shadow .3s, top .3s; }
 #announcement-bar { transition: transform .3s ease; }
 #nav.scrolled { background-color: rgba(255,255,255,0.85); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgb(220 232 248); box-shadow: 0 4px 20px -4px rgba(15,32,68,0.06); }
-#nav.scrolled .nav-link { color: #1a3a6b; }
-#nav.scrolled .nav-link:hover { color: #e6b800; }
-#nav.scrolled .logo-text { color: #1a3a6b; }
+#nav.scrolled .nav-link { color: #2563eb; }
+#nav.scrolled .nav-link:hover { color: #dc2626; }
+#nav.scrolled .logo-text { color: #2563eb; }
 #nav.scrolled .logo-sub { color: #64748B; }
 #nav.scrolled .nav-phone { color: #475569; }
-#nav.scrolled .nav-phone:hover { color: #e6b800; }
-#nav.scrolled .mobile-menu-btn { color: #1a3a6b; }
+#nav.scrolled .nav-phone:hover { color: #dc2626; }
+#nav.scrolled .mobile-menu-btn { color: #2563eb; }
 
 /* Khatam geometric pattern */
 .pattern-khatam {
@@ -36,7 +36,7 @@
 
 /* Nav link underline animation */
 .nav-link { position: relative; }
-.nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: #e6b800; transition: width .2s ease; }
+.nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: #dc2626; transition: width .2s ease; }
 .nav-link:hover::after { width: 100%; }
 
 /* FAQ accordion */
@@ -59,7 +59,8 @@
 .animate-marquee:hover { animation-play-state: paused; }
 
 /* Smooth scroll */
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body { overflow-x: hidden; }
 
 /* Hide scrollbar for horizontal scroll cards */
 .overflow-x-auto { -ms-overflow-style: none; scrollbar-width: none; }
@@ -67,7 +68,7 @@ html { scroll-behavior: smooth; }
 
 /* Focus states */
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
-  outline: 2px solid #e6b800;
+  outline: 2px solid #dc2626;
   outline-offset: 2px;
 }
 
@@ -88,3 +89,28 @@ body.menu-open { overflow: hidden; }
 
 /* Image fallback */
 img.img-fallback { background: #000a1e; }
+
+/* Islamic geometric ornaments */
+.islamic-ornament {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.04;
+  background-repeat: repeat;
+  background-size: 80px 80px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath d='M40 0L50 10L40 20L30 10Z M0 40L10 30L20 40L10 50Z M40 60L50 70L40 80L30 70Z M60 40L70 30L80 40L70 50Z M40 20L60 40L40 60L20 40Z' fill='none' stroke='%23c9a96e' stroke-width='0.5'/%3E%3Ccircle cx='40' cy='40' r='15' fill='none' stroke='%23c9a96e' stroke-width='0.5'/%3E%3Ccircle cx='40' cy='40' r='8' fill='none' stroke='%23c9a96e' stroke-width='0.3'/%3E%3C/svg%3E");
+}
+.islamic-ornament-star {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.05;
+  background-repeat: repeat;
+  background-size: 120px 120px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpolygon points='60,5 72,42 110,42 78,65 90,102 60,80 30,102 42,65 10,42 48,42' fill='none' stroke='%23ffffff' stroke-width='0.5'/%3E%3Ccircle cx='60' cy='60' r='25' fill='none' stroke='%23ffffff' stroke-width='0.3'/%3E%3C/svg%3E");
+}
+
+
+/* Package carousel wrapper */
+.paket-wrapper { overflow: hidden; padding-top: 1rem; }
+@media (min-width: 768px) { .paket-wrapper { overflow: visible; padding-top: 1.5rem; } }
+#paket-track > div { margin: 0 12px; }
+@media (min-width: 768px) { #paket-track > div { margin: 0; } }
