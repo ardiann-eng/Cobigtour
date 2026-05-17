@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cobig Tour — Umroh dan Haji Khusus | Makassar</title>
+  <meta name="description" content="Cobig Tour: Bimbingan umroh dan haji khusus sesuai Al-Qur'an dan Sunnah. Akreditasi A Kemenag RI. Lion Air Direct Makassar-Jeddah.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Inter:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 950: '#0a1628', 900: '#0f2044', 800: '#1a3a6b', 700: '#2554a0', 600: '#3068c0', 100: '#dce8f8' },
+            gold: { 700: '#c49a1a', 500: '#e6b800', 400: '#f5cc00', 300: '#ffe04d', 100: '#fff8d6' },
+            cream: '#f4f7fc',
+            sand: '#edf2fa',
+            slate: { 600: '#475569', 500: '#64748B', 400: '#94A3B8' },
+            accent: { red: '#e63946' }
+          },
+          fontFamily: {
+            display: ['Montserrat', 'system-ui', 'sans-serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif']
+          },
+          maxWidth: { prose: '640px', shell: '1280px' },
+          boxShadow: {
+            soft: '0 12px 40px -12px rgba(15, 32, 68, 0.12)',
+            lift: '0 24px 60px -18px rgba(15, 32, 68, 0.20)'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-body text-navy-800 bg-cream antialiased">
+
+  <!-- Announcement Bar -->
+  <div id="announcement-bar" class="hidden md:block fixed top-0 left-0 right-0 bg-navy-950 text-cream text-[13px] font-medium h-10 z-[51]">
+    <div class="max-w-shell mx-auto px-5 md:px-16 h-full flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <i data-lucide="shield-check" class="w-4 h-4 stroke-[1.5] text-gold-500"></i>
+        <span>Izin PPIU 17012200308230005 — Akreditasi A Kemenag RI</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <span class="flex items-center gap-1.5"><i data-lucide="phone" class="w-3.5 h-3.5 stroke-[1.5]"></i> 0811 44 66667</span>
+        <span class="text-white/30">&middot;</span>
+        <span class="flex items-center gap-1.5"><i data-lucide="mail" class="w-3.5 h-3.5 stroke-[1.5]"></i> cobigtour.travel@gmail.com</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Navigation -->
+  <nav id="nav" class="fixed top-0 md:top-10 left-0 right-0 h-20 z-50 border-b border-transparent">
+    <div class="max-w-shell mx-auto px-5 md:px-16 h-full flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 flex items-center justify-center">
+          <svg viewBox="0 0 40 40" fill="none" class="w-10 h-10"><circle cx="20" cy="20" r="18" stroke="#1a3a6b" stroke-width="2"/><path d="M28 12C25 9 21 8 17 9C12 10.5 9 15 9 20C9 25 12 29.5 17 31C21 32 25 31 28 28" stroke="#1a3a6b" stroke-width="2.5" stroke-linecap="round"/><path d="M28 12L32 10M28 12L30 16" stroke="#e6b800" stroke-width="2" stroke-linecap="round"/><path d="M28 28L32 30M28 28L30 24" stroke="#e6b800" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <div class="logo-text font-display font-bold text-[16px] tracking-[0.08em] text-white transition-colors">COBIG TOUR</div>
+        </div>
+      </a>
+      <!-- Desktop Menu -->
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="#" class="nav-link text-white text-sm font-medium transition-colors">Beranda</a>
+        <a href="#paket" class="nav-link text-white text-sm font-medium transition-colors">Paket</a>
+        <a href="#keunggulan" class="nav-link text-white text-sm font-medium transition-colors">Keunggulan</a>
+        <a href="#galeri" class="nav-link text-white text-sm font-medium transition-colors">Galeri</a>
+        <a href="#testimoni" class="nav-link text-white text-sm font-medium transition-colors">Testimoni</a>
+        <a href="#faq" class="nav-link text-white text-sm font-medium transition-colors">FAQ</a>
+      </div>
+      <!-- Right side -->
+      <div class="hidden lg:flex items-center gap-5">
+        <a href="tel:08114466667" class="nav-phone text-white/70 text-sm hover:text-gold-500 transition-colors">0811 44 66667</a>
+        <a href="#daftar" class="group relative bg-gold-500 text-navy-900 font-display font-semibold text-sm px-7 py-3 rounded-xl hover:shadow-lift transition-all overflow-hidden">
+          <span class="relative z-10">Daftar Sekarang</span>
+          <span class="absolute inset-0 bg-gold-300 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+        </a>
+      </div>
+      <!-- Mobile hamburger -->
+      <button id="menu-btn" class="lg:hidden mobile-menu-btn text-white" aria-label="Buka menu navigasi">
+        <i data-lucide="menu" class="w-6 h-6 stroke-[1.5]"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Drawer -->
+  <div id="mobile-menu" class="fixed inset-0 z-[60] bg-navy-900 flex flex-col items-center justify-center" aria-hidden="true">
+    <button id="close-btn" class="absolute top-6 right-6 text-white" aria-label="Tutup menu">
+      <i data-lucide="x" class="w-7 h-7 stroke-[1.5]"></i>
+    </button>
+    <div class="flex flex-col items-center gap-8">
+      <a href="#" class="text-white text-[28px] font-display font-medium">Beranda</a>
+      <a href="#paket" class="text-white text-[28px] font-display font-medium">Paket</a>
+      <a href="#keunggulan" class="text-white text-[28px] font-display font-medium">Keunggulan</a>
+      <a href="#galeri" class="text-white text-[28px] font-display font-medium">Galeri</a>
+      <a href="#testimoni" class="text-white text-[28px] font-display font-medium">Testimoni</a>
+      <a href="#faq" class="text-white text-[28px] font-display font-medium">FAQ</a>
+      <a href="#daftar" class="text-white text-[28px] font-display font-medium">Daftar</a>
+      <a href="https://wa.me/62811446667?text=Assalamualaikum%20Cobig%20Tour" class="mt-4 bg-gold-500 text-navy-900 font-display font-semibold text-lg px-8 py-4 rounded">Konsultasi WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- SECTION 1: Hero -->
+  <section class="relative min-h-[auto] md:min-h-screen">
+    <div class="absolute inset-0">
+      <img src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=2400&q=85" alt="Ka'bah di malam hari dengan ribuan jamaah" class="w-full h-full object-cover" decoding="async" data-fallback>
+      <div class="absolute inset-0 bg-gradient-to-b from-navy-950/95 via-navy-900/80 to-navy-900/70"></div>
+      <div class="absolute inset-0 pattern-khatam opacity-[0.02]"></div>
+    </div>
+    <div class="relative max-w-shell mx-auto px-5 md:px-16 pt-28 pb-20 md:pt-32 md:pb-32 grid lg:grid-cols-12 gap-10 items-center md:min-h-screen">
+      <div class="lg:col-span-6">
+        <p class="text-gold-500 text-xs font-display font-semibold uppercase tracking-[0.15em] reveal">BIMBINGAN SESUAI AL-QUR'AN &amp; SUNNAH</p>
+        <h1 class="font-display font-bold text-white text-[40px] md:text-[64px] leading-[1.05] tracking-[-0.02em] mt-6 reveal" data-stagger="1">
+          Umroh Mabrur,<br>Khusyuk, dan Tenang<br>dalam <span class="font-serif italic font-medium text-gold-500">12 hari</span>.
+        </h1>
+        <p class="text-white/70 text-base leading-[1.75] max-w-[480px] mt-6 reveal" data-stagger="2">
+          Kami urus seluruh perjalanan, Anda tinggal khusyuk beribadah.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 mt-8 reveal" data-stagger="3">
+          <a href="https://wa.me/62811446667?text=Assalamualaikum%2C%20saya%20ingin%20konsultasi%20paket%20umroh%20Cobig%20Tour" class="group inline-flex items-center justify-center gap-2 bg-gold-500 text-navy-900 font-display font-bold text-sm px-7 py-4 rounded-xl hover:bg-gold-400 hover:shadow-lift transition-all relative overflow-hidden">
+            <span class="relative z-10 flex items-center gap-2">Konsultasi via WhatsApp <i data-lucide="chevron-right" class="w-4 h-4 stroke-[2] group-hover:translate-x-1 transition-transform"></i></span>
+            <span class="absolute inset-0 bg-gold-300 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300"></span>
+          </a>
+          <a href="#paket" class="group inline-flex items-center justify-center gap-2 bg-white/10 border border-white/30 text-white font-display font-semibold text-sm px-7 py-4 rounded-xl hover:bg-white hover:text-navy-900 transition-all duration-300">
+            Lihat Paket <i data-lucide="chevron-right" class="w-4 h-4 stroke-[2] group-hover:translate-x-1 transition-transform"></i>
+          </a>
+        </div>
+      </div>
+      <div class="lg:col-span-6 reveal" data-stagger="2">
+        <div class="relative">
+          <!-- Glow behind card -->
+          <div class="absolute -inset-4 bg-gold-500/10 rounded-[40px] blur-2xl"></div>
+          <div class="relative bg-white/[0.08] backdrop-blur-xl border border-white/20 rounded-3xl p-6 md:p-10 shadow-lift">
+          <p class="text-center text-gold-300/80 text-2xl font-serif" dir="rtl">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+          <div class="w-10 h-px bg-gold-500 mx-auto my-6"></div>
+          <p class="text-gold-400 text-xs uppercase tracking-[0.15em] font-display font-semibold text-center">PAKET UMROH AWAL MUSIM 1448 H</p>
+          <p class="text-white/60 text-[13px] text-center mt-4">Mulai dari</p>
+          <p class="text-white font-display font-bold text-5xl tracking-tight tabular-nums text-center mt-2">Rp 31.500.000</p>
+          <p class="flex items-center justify-center gap-1.5 text-white/70 text-[13px] mt-6"><i data-lucide="clock" class="w-3.5 h-3.5 stroke-[1.5]"></i> Juli – Desember 2026 &middot; 12 Hari &middot; Lion Air Direct</p>
+          <div class="mt-7 space-y-3">
+            <div class="flex items-start gap-2.5"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 mt-0.5 shrink-0"></i><span class="text-white/85 text-sm">Tiket pesawat PP Makassar–Jeddah</span></div>
+            <div class="flex items-start gap-2.5"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 mt-0.5 shrink-0"></i><span class="text-white/85 text-sm">Hotel berstandar dekat Haram</span></div>
+            <div class="flex items-start gap-2.5"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 mt-0.5 shrink-0"></i><span class="text-white/85 text-sm">Manasik &amp; muthawif bersertifikat</span></div>
+            <div class="flex items-start gap-2.5"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 mt-0.5 shrink-0"></i><span class="text-white/85 text-sm">Visa, perlengkapan, ziarah — included</span></div>
+          </div>
+          <a href="#paket" class="flex items-center gap-1.5 text-gold-500 text-sm font-medium mt-7 hover:translate-x-1 transition-transform">Lihat 4 paket lengkap <i data-lucide="chevron-right" class="w-4 h-4 stroke-[1.5]"></i></a>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- Floating Quick Filter Bar (hidden on mobile) -->
+    <div class="hidden md:block absolute -bottom-10 left-1/2 -translate-x-1/2 w-full max-w-3xl px-5 z-30">
+      <div class="bg-white rounded-2xl shadow-lift p-5 md:p-6 flex flex-col md:flex-row items-stretch md:items-center gap-4 md:gap-0">
+        <div class="flex-1 px-4 md:border-r border-navy-100 relative quick-select-wrap">
+          <p class="text-[11px] text-slate-400 font-medium uppercase tracking-wide flex items-center gap-1.5"><i data-lucide="plane" class="w-4 h-4 stroke-[1.5] text-gold-500"></i> Keberangkatan</p>
+          <button type="button" class="quick-select-btn w-full text-left text-navy-900 text-[15px] font-semibold mt-1 flex items-center justify-between" data-target="qd-bulan">
+            <span class="qs-value">Juli 2026</span><i data-lucide="chevron-down" class="w-4 h-4 stroke-[1.5] text-slate-400 transition-transform"></i>
+          </button>
+          <div id="qd-bulan" class="custom-dropdown hidden absolute top-full left-0 right-0 mt-3 bg-white border border-navy-100 rounded-xl shadow-lift z-20 overflow-hidden">
+            <div class="py-2">
+              <div class="qs-option px-5 py-2.5 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer" data-value="Juli 2026">Juli 2026</div>
+              <div class="qs-option px-5 py-2.5 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer" data-value="Agustus 2026">Agustus 2026</div>
+              <div class="qs-option px-5 py-2.5 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer" data-value="September 2026">September 2026</div>
+              <div class="qs-option px-5 py-2.5 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer" data-value="Oktober 2026">Oktober 2026</div>
+              <div class="qs-option px-5 py-2.5 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer" data-value="November 2026">November 2026</div>
+              <div class="qs-option px-5 py-2.5 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer" data-value="Desember 2026">Desember 2026</div>
+            </div>
+          </div>
+          <input type="hidden" id="quick-bulan" value="Juli 2026">
+        </div>
+        <div class="flex-1 px-4 md:border-r border-navy-100 relative quick-select-wrap">
+          <p class="text-[11px] text-slate-400 font-medium uppercase tracking-wide flex items-center gap-1.5"><i data-lucide="building-2" class="w-4 h-4 stroke-[1.5] text-gold-500"></i> Paket</p>
+          <button type="button" class="quick-select-btn w-full text-left text-navy-900 text-[15px] font-semibold mt-1 flex items-center justify-between" data-target="qd-paket">
+            <span class="qs-value">Ekonomis</span><i data-lucide="chevron-down" class="w-4 h-4 stroke-[1.5] text-slate-400 transition-transform"></i>
+          </button>
+          <div id="qd-paket" class="custom-dropdown hidden absolute top-full left-0 right-0 mt-3 bg-white border border-navy-100 rounded-xl shadow-lift z-20 overflow-hidden">
+            <div class="py-2">
+              <div class="qs-option px-5 py-2.5 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer" data-value="Ekonomis">Ekonomis</div>
+              <div class="qs-option px-5 py-2.5 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer" data-value="Premium">Premium</div>
+              <div class="qs-option px-5 py-2.5 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer" data-value="Executive">Executive</div>
+              <div class="qs-option px-5 py-2.5 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer" data-value="VIP">VIP</div>
+            </div>
+          </div>
+          <input type="hidden" id="quick-paket" value="Ekonomis">
+        </div>
+        <div class="flex-1 px-4 relative quick-select-wrap">
+          <p class="text-[11px] text-slate-400 font-medium uppercase tracking-wide flex items-center gap-1.5"><i data-lucide="users" class="w-4 h-4 stroke-[1.5] text-gold-500"></i> Jamaah</p>
+          <button type="button" class="quick-select-btn w-full text-left text-navy-900 text-[15px] font-semibold mt-1 flex items-center justify-between" data-target="qd-jamaah">
+            <span class="qs-value">1 Orang</span><i data-lucide="chevron-down" class="w-4 h-4 stroke-[1.5] text-slate-400 transition-transform"></i>
+          </button>
+          <div id="qd-jamaah" class="custom-dropdown hidden absolute top-full left-0 right-0 mt-3 bg-white border border-navy-100 rounded-xl shadow-lift z-20 overflow-hidden">
+            <div class="py-2">
+              <div class="qs-option px-5 py-2.5 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer" data-value="1">1 Orang</div>
+              <div class="qs-option px-5 py-2.5 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer" data-value="2">2 Orang</div>
+              <div class="qs-option px-5 py-2.5 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer" data-value="3-5">3–5 Orang</div>
+              <div class="qs-option px-5 py-2.5 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer" data-value="5+">5+ Orang</div>
+            </div>
+          </div>
+          <input type="hidden" id="quick-jamaah" value="1">
+        </div>
+        <button id="quick-search-btn" class="bg-gold-500 hover:bg-gold-400 text-navy-900 rounded-xl w-14 h-14 flex items-center justify-center shrink-0 transition-colors shadow-soft ml-2">
+          <i data-lucide="chevron-right" class="w-6 h-6 stroke-[2]"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="relative z-0 bg-cream pt-16 pb-20 md:pt-20 md:pb-24">
+    <!-- Decorative mosque/minaret silhouettes on sides -->
+    <div class="absolute left-0 bottom-0 w-32 md:w-48 opacity-[0.06]">
+      <svg viewBox="0 0 200 400" fill="#002147" xmlns="http://www.w3.org/2000/svg"><rect x="85" y="40" width="30" height="360" rx="4"/><circle cx="100" cy="30" r="18"/><rect x="60" y="180" width="80" height="220" rx="8"/><path d="M60 180 Q100 120 140 180" fill="#002147"/><rect x="92" y="10" width="16" height="25" rx="8"/><circle cx="100" cy="6" r="6"/></svg>
+    </div>
+    <div class="absolute right-0 bottom-0 w-32 md:w-48 opacity-[0.06]">
+      <svg viewBox="0 0 200 400" fill="#002147" xmlns="http://www.w3.org/2000/svg"><rect x="85" y="40" width="30" height="360" rx="4"/><circle cx="100" cy="30" r="18"/><rect x="60" y="180" width="80" height="220" rx="8"/><path d="M60 180 Q100 120 140 180" fill="#002147"/><rect x="92" y="10" width="16" height="25" rx="8"/><circle cx="100" cy="6" r="6"/></svg>
+    </div>
+    <!-- Decorative arches pattern at bottom -->
+    <div class="absolute bottom-0 left-0 right-0 h-16 opacity-[0.04]">
+      <svg viewBox="0 0 1200 60" fill="none" stroke="#002147" stroke-width="1" xmlns="http://www.w3.org/2000/svg" class="w-full h-full" preserveAspectRatio="none">
+        <path d="M0 60 Q50 0 100 60 Q150 0 200 60 Q250 0 300 60 Q350 0 400 60 Q450 0 500 60 Q550 0 600 60 Q650 0 700 60 Q750 0 800 60 Q850 0 900 60 Q950 0 1000 60 Q1050 0 1100 60 Q1150 0 1200 60"/>
+      </svg>
+    </div>
+    <!-- Subtle radial glow -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-gold-300/10 rounded-full blur-3xl"></div>
+    <div class="relative max-w-shell mx-auto px-5 md:px-16 text-center">
+      <p class="text-slate-500 text-xs uppercase tracking-[0.15em] font-display font-medium">MASKAPAI INTERNASIONAL TERPERCAYA</p>
+      <div class="flex flex-wrap justify-center items-center gap-x-16 gap-y-8 mt-12">
+        <img src="https://www.gstatic.com/flights/airline_logos/70px/JT.png" alt="Lion Air" class="h-20 md:h-24 grayscale opacity-50 hover:opacity-90 hover:grayscale-0 transition-all" loading="lazy" decoding="async">
+        <img src="https://www.gstatic.com/flights/airline_logos/70px/SV.png" alt="Saudia" class="h-20 md:h-24 grayscale opacity-50 hover:opacity-90 hover:grayscale-0 transition-all" loading="lazy" decoding="async">
+        <img src="https://www.gstatic.com/flights/airline_logos/70px/GA.png" alt="Garuda Indonesia" class="h-20 md:h-24 grayscale opacity-50 hover:opacity-90 hover:grayscale-0 transition-all" loading="lazy" decoding="async">
+        <img src="https://www.gstatic.com/flights/airline_logos/70px/QR.png" alt="Qatar Airways" class="h-20 md:h-24 grayscale opacity-50 hover:opacity-90 hover:grayscale-0 transition-all" loading="lazy" decoding="async">
+        <img src="https://www.gstatic.com/flights/airline_logos/70px/EK.png" alt="Emirates" class="h-20 md:h-24 grayscale opacity-50 hover:opacity-90 hover:grayscale-0 transition-all" loading="lazy" decoding="async">
+        <img src="https://www.gstatic.com/flights/airline_logos/70px/EY.png" alt="Etihad Airways" class="h-20 md:h-24 grayscale opacity-50 hover:opacity-90 hover:grayscale-0 transition-all" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SECTION 2: Empathy -->
+  <section class="bg-cream py-[80px] md:py-[120px] lg:py-[160px] overflow-hidden">
+    <div class="max-w-shell mx-auto px-5 md:px-16">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <!-- Left: text + grid -->
+        <div>
+          <p class="font-serif italic text-gold-700 text-lg reveal">Bagian 02 — Empati</p>
+          <h2 class="font-display font-semibold text-navy-900 text-[26px] md:text-[38px] leading-[1.15] mt-4 reveal">
+            Umroh seharusnya menenangkan. Bukan menambah cemas.
+          </h2>
+          <p class="text-slate-600 text-[15px] leading-[1.7] mt-4 max-w-[480px] reveal">
+            Kekhawatiran ini kami dengar setiap minggu dari calon jamaah. Mungkin Anda mengalami salah satunya.
+          </p>
+          <a href="#paket" class="inline-flex items-center gap-2 bg-navy-900 text-white font-display font-semibold text-sm px-6 py-3 rounded-xl mt-6 hover:bg-navy-800 transition-colors reveal">
+            Lihat Solusi Kami <i data-lucide="chevron-right" class="w-4 h-4 stroke-[1.5]"></i>
+          </a>
+          <!-- 2x2 grid features -->
+          <div class="grid grid-cols-2 gap-x-8 gap-y-6 mt-10">
+            <div class="reveal"><div class="flex items-center gap-2"><i data-lucide="alert-triangle" class="w-5 h-5 stroke-[1.5] text-gold-500"></i><h3 class="font-display font-semibold text-navy-900 text-sm">Takut tertipu</h3></div><p class="text-slate-500 text-xs leading-[1.6] mt-1.5">Berita umroh gagal berangkat bikin trauma.</p></div>
+            <div class="reveal" data-stagger="1"><div class="flex items-center gap-2"><i data-lucide="heart-handshake" class="w-5 h-5 stroke-[1.5] text-gold-500"></i><h3 class="font-display font-semibold text-navy-900 text-sm">Khawatir lansia</h3></div><p class="text-slate-500 text-xs leading-[1.6] mt-1.5">Takut kelelahan atau tersesat di keramaian.</p></div>
+            <div class="reveal" data-stagger="2"><div class="flex items-center gap-2"><i data-lucide="book-open" class="w-5 h-5 stroke-[1.5] text-gold-500"></i><h3 class="font-display font-semibold text-navy-900 text-sm">Ragu syariah</h3></div><p class="text-slate-500 text-xs leading-[1.6] mt-1.5">Apakah manasik sesuai sunnah Rasulullah?</p></div>
+            <div class="reveal" data-stagger="3"><div class="flex items-center gap-2"><i data-lucide="wallet" class="w-5 h-5 stroke-[1.5] text-gold-500"></i><h3 class="font-display font-semibold text-navy-900 text-sm">Biaya tersembunyi</h3></div><p class="text-slate-500 text-xs leading-[1.6] mt-1.5">Tagihan akhir berbeda dari brosur.</p></div>
+          </div>
+        </div>
+        <!-- Right: image with accent bg -->
+        <div class="relative flex justify-center reveal">
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] h-[85%] bg-gold-500 rounded-[40px] -rotate-3"></div>
+          <img src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=800&q=90" alt="Ka'bah dengan jamaah umroh" class="relative rounded-3xl w-full max-w-[380px] aspect-[3/4] object-cover shadow-lift" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SECTION 3a: Why Cobig -->
+  <section id="keunggulan" class="bg-white py-[80px] md:py-[120px] lg:py-[160px]">
+    <div class="max-w-shell mx-auto px-5 md:px-16 text-center">
+      <p class="font-serif italic text-gold-700 text-lg reveal">Bagian 03 — Mengapa Cobig</p>
+      <h2 class="font-display font-semibold text-navy-900 text-[32px] md:text-[56px] leading-[1.1] tracking-tight max-w-[720px] mx-auto mt-4 reveal">
+        Solusi konkret untuk setiap kekhawatiran Anda.
+      </h2>
+      <p class="text-slate-600 text-[17px] leading-[1.75] max-w-prose mx-auto mt-6 reveal">
+        Bukan janji marketing. Setiap poin di bawah adalah komitmen yang tertulis dalam kontrak.
+      </p>
+    </div>
+    <div class="max-w-shell mx-auto px-5 md:px-16 mt-24">
+      <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+        <div class="border border-navy-100 rounded-2xl p-5 md:p-10 hover:border-gold-500/40 hover:shadow-soft transition-all duration-300 reveal">
+          <div class="w-10 h-10 rounded-full border border-navy-100 flex items-center justify-center"><i data-lucide="shield-check" class="w-5 h-5 stroke-[1.5] text-gold-500"></i></div>
+          <h3 class="font-display font-semibold text-navy-900 text-sm md:text-xl mt-4 md:mt-6">Akreditasi A Kemenag</h3>
+          <p class="text-slate-600 text-xs md:text-[15px] leading-[1.6] md:leading-[1.75] mt-2 md:mt-3 hidden md:block">Izin PPIU resmi No. 17012200308230005. Travel terverifikasi dan dipantau langsung Kementerian Agama RI.</p>
+        </div>
+        <div class="border border-navy-100 rounded-2xl p-5 md:p-10 hover:border-gold-500/40 hover:shadow-soft transition-all duration-300 reveal" data-stagger="1">
+          <div class="w-10 h-10 rounded-full border border-navy-100 flex items-center justify-center"><i data-lucide="plane" class="w-5 h-5 stroke-[1.5] text-gold-500"></i></div>
+          <h3 class="font-display font-semibold text-navy-900 text-sm md:text-xl mt-4 md:mt-6">Direct Makassar–Jeddah</h3>
+          <p class="text-slate-600 text-xs md:text-[15px] leading-[1.6] md:leading-[1.75] mt-2 md:mt-3 hidden md:block">Tanpa transit. Berangkat dan pulang langsung dari Makassar, hemat waktu dan tenaga untuk jamaah lansia.</p>
+        </div>
+        <div class="border border-navy-100 rounded-2xl p-5 md:p-10 hover:border-gold-500/40 hover:shadow-soft transition-all duration-300 reveal" data-stagger="2">
+          <div class="w-10 h-10 rounded-full border border-navy-100 flex items-center justify-center"><i data-lucide="building-2" class="w-5 h-5 stroke-[1.5] text-gold-500"></i></div>
+          <h3 class="font-display font-semibold text-navy-900 text-sm md:text-xl mt-4 md:mt-6">Hotel Dekat Haram</h3>
+          <p class="text-slate-600 text-xs md:text-[15px] leading-[1.6] md:leading-[1.75] mt-2 md:mt-3 hidden md:block">Semua paket menggunakan hotel berstandar di kawasan Haram &amp; Nabawi. Jarak terjauh ditempuh jalan kaki singkat.</p>
+        </div>
+        <div class="border border-navy-100 rounded-2xl p-5 md:p-10 hover:border-gold-500/40 hover:shadow-soft transition-all duration-300 reveal" data-stagger="3">
+          <div class="w-10 h-10 rounded-full border border-navy-100 flex items-center justify-center"><i data-lucide="wallet" class="w-5 h-5 stroke-[1.5] text-gold-500"></i></div>
+          <h3 class="font-display font-semibold text-navy-900 text-sm md:text-xl mt-4 md:mt-6">Transparansi Total</h3>
+          <p class="text-slate-600 text-xs md:text-[15px] leading-[1.6] md:leading-[1.75] mt-2 md:mt-3 hidden md:block">Harga di brosur adalah harga final. Seluruh include dan exclude tertera dalam kontrak, tanpa biaya tersembunyi.</p>
+        </div>
+        <div class="border border-navy-100 rounded-2xl p-5 md:p-10 hover:border-gold-500/40 hover:shadow-soft transition-all duration-300 reveal" data-stagger="4">
+          <div class="w-10 h-10 rounded-full border border-navy-100 flex items-center justify-center"><i data-lucide="book-open" class="w-5 h-5 stroke-[1.5] text-gold-500"></i></div>
+          <h3 class="font-display font-semibold text-navy-900 text-sm md:text-xl mt-4 md:mt-6">Muthawif Bersertifikat</h3>
+          <p class="text-slate-600 text-xs md:text-[15px] leading-[1.6] md:leading-[1.75] mt-2 md:mt-3 hidden md:block">Setiap muthawif berlisensi resmi dan memahami fiqih umroh sesuai mazhab yang dianut jamaah Indonesia.</p>
+        </div>
+        <div class="border border-navy-100 rounded-2xl p-5 md:p-10 hover:border-gold-500/40 hover:shadow-soft transition-all duration-300 reveal" data-stagger="5">
+          <div class="w-10 h-10 rounded-full border border-navy-100 flex items-center justify-center"><i data-lucide="heart-handshake" class="w-5 h-5 stroke-[1.5] text-gold-500"></i></div>
+          <h3 class="font-display font-semibold text-navy-900 text-sm md:text-xl mt-4 md:mt-6">Pendampingan 24 Jam</h3>
+          <p class="text-slate-600 text-xs md:text-[15px] leading-[1.6] md:leading-[1.75] mt-2 md:mt-3 hidden md:block">Tour leader siaga 24 jam selama di tanah suci. Group WhatsApp khusus aktif sejak manasik hingga kepulangan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SECTION 3b: Package Showcase -->
+  <section id="paket" class="bg-cream py-[80px] md:py-[120px] lg:py-[160px]">
+    <div class="max-w-shell mx-auto px-5 md:px-16 text-center">
+      <p class="font-serif italic text-gold-700 text-lg reveal">Bagian 04 — Paket</p>
+      <h2 class="font-display font-semibold text-navy-900 text-[32px] md:text-[56px] leading-[1.1] tracking-tight max-w-[760px] mx-auto mt-4 reveal">
+        Empat paket. Satu standar kualitas.
+      </h2>
+      <p class="text-slate-600 text-[17px] leading-[1.75] max-w-prose mx-auto mt-6 reveal">
+        Periode Juli – Desember 2026 &middot; Lion Air Direct Makassar–Jeddah (PP) &middot; 12 Hari
+      </p>
+    </div>
+    <div class="max-w-shell mx-auto px-5 md:px-16 mt-20">
+      <div class="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 overflow-x-auto md:overflow-visible snap-x snap-mandatory pt-5 pb-4 md:pb-0 -mx-5 px-5 md:mx-0 md:px-0 items-start" style="-webkit-overflow-scrolling:touch">
+        <!-- Ekonomis -->
+        <div class="min-w-[260px] md:min-w-0 snap-start bg-white border border-navy-100 rounded-2xl p-6 md:p-8 hover:shadow-lift hover:-translate-y-1 transition-all duration-300 reveal">
+          <p class="text-slate-500 text-[11px] uppercase tracking-[0.15em] font-display">Paket</p>
+          <h3 class="font-display font-bold text-navy-900 text-xl tracking-tight mt-2">EKONOMIS</h3>
+          <p class="font-display font-bold text-navy-900 text-3xl tabular-nums mt-5">Rp 31.500.000</p>
+          <div class="border-t border-navy-100 my-6"></div>
+          <p class="text-slate-500 text-xs font-medium">Termasuk:</p>
+          <div class="mt-3 space-y-2.5">
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-navy-800 text-[13px]">Penerbangan PP Lion Air Direct</span></div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-navy-800 text-[13px]">Hotel Waha / Setaraf</span></div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-navy-800 text-[13px]">12 hari perjalanan</span></div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-navy-800 text-[13px]">Muthawif bersertifikat</span></div>
+          </div>
+          <a href="https://wa.me/62811446667?text=Assalamualaikum%2C%20saya%20tertarik%20Paket%20Ekonomis%20Cobig%20Tour%20(Rp%2031.500.000)" class="flex items-center justify-center gap-2 w-full border-2 border-navy-900 text-navy-900 font-display font-semibold text-sm py-3.5 rounded-xl mt-8 hover:bg-navy-900 hover:text-white transition-colors">
+            Pilih Paket Ini <i data-lucide="chevron-right" class="w-4 h-4 stroke-[1.5]"></i>
+          </a>
+        </div>
+        <!-- Premium -->
+        <div class="min-w-[260px] md:min-w-0 snap-start bg-white border border-navy-100 rounded-2xl p-6 md:p-8 hover:shadow-lift hover:-translate-y-1 transition-all duration-300 reveal" data-stagger="1">
+          <p class="text-slate-500 text-[11px] uppercase tracking-[0.15em] font-display">Paket</p>
+          <h3 class="font-display font-bold text-navy-900 text-xl tracking-tight mt-2">PREMIUM</h3>
+          <p class="font-display font-bold text-navy-900 text-3xl tabular-nums mt-5">Rp 34.500.000</p>
+          <div class="border-t border-navy-100 my-6"></div>
+          <p class="text-slate-500 text-xs font-medium">Termasuk:</p>
+          <div class="mt-3 space-y-2.5">
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-navy-800 text-[13px]">Penerbangan PP Lion Air Direct</span></div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-navy-800 text-[13px]">Hotel Nada Deafah / Setaraf</span></div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-navy-800 text-[13px]">12 hari perjalanan</span></div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-navy-800 text-[13px]">Muthawif bersertifikat</span></div>
+          </div>
+          <a href="https://wa.me/62811446667?text=Assalamualaikum%2C%20saya%20tertarik%20Paket%20Premium%20Cobig%20Tour%20(Rp%2034.500.000)" class="flex items-center justify-center gap-2 w-full border-2 border-navy-900 text-navy-900 font-display font-semibold text-sm py-3.5 rounded-xl mt-8 hover:bg-navy-900 hover:text-white transition-colors">
+            Pilih Paket Ini <i data-lucide="chevron-right" class="w-4 h-4 stroke-[1.5]"></i>
+          </a>
+        </div>
+        <!-- Executive (featured) -->
+        <div class="min-w-[260px] md:min-w-0 snap-start bg-navy-900 rounded-2xl p-6 md:p-8 relative shadow-lift lg:-mt-4 lg:mb-[-16px] reveal" data-stagger="2">
+          <span class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gold-500 text-navy-900 text-[10px] uppercase tracking-[0.15em] font-display font-semibold px-4 py-1.5 rounded-full whitespace-nowrap">Paling Direkomendasikan</span>
+          <p class="text-gold-400 text-[11px] uppercase tracking-[0.15em] font-display">Paket</p>
+          <h3 class="font-display font-bold text-white text-xl tracking-tight mt-2">EXECUTIVE</h3>
+          <p class="font-display font-bold text-white text-3xl tabular-nums mt-5">Rp 36.500.000</p>
+          <div class="border-t border-white/10 my-6"></div>
+          <p class="text-white/50 text-xs font-medium">Termasuk:</p>
+          <div class="mt-3 space-y-2.5">
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-white/90 text-[13px]">Penerbangan PP Lion Air Direct</span></div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-white/90 text-[13px]">Hotel Villa Hilton / Setaraf</span></div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-white/90 text-[13px]">12 hari perjalanan</span></div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-white/90 text-[13px]">Muthawif bersertifikat</span></div>
+          </div>
+          <a href="https://wa.me/62811446667?text=Assalamualaikum%2C%20saya%20tertarik%20Paket%20Executive%20Cobig%20Tour%20(Rp%2036.500.000)" class="flex items-center justify-center gap-2 w-full bg-gold-500 text-navy-900 font-display font-semibold text-sm py-3.5 rounded-xl mt-8 hover:bg-gold-400 transition-colors">
+            Pilih Paket Ini <i data-lucide="chevron-right" class="w-4 h-4 stroke-[1.5]"></i>
+          </a>
+        </div>
+        <!-- VIP -->
+        <div class="min-w-[260px] md:min-w-0 snap-start bg-white border border-navy-100 rounded-2xl p-6 md:p-8 hover:shadow-lift hover:-translate-y-1 transition-all duration-300 reveal" data-stagger="3">
+          <p class="text-slate-500 text-[11px] uppercase tracking-[0.15em] font-display">Paket</p>
+          <h3 class="font-display font-bold text-navy-900 text-xl tracking-tight mt-2">VIP</h3>
+          <p class="font-display font-bold text-navy-900 text-3xl tabular-nums mt-5">Rp 40.500.000</p>
+          <div class="border-t border-navy-100 my-6"></div>
+          <p class="text-slate-500 text-xs font-medium">Termasuk:</p>
+          <div class="mt-3 space-y-2.5">
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-navy-800 text-[13px]">Penerbangan PP Lion Air Direct</span></div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-navy-800 text-[13px]">Hotel Safwa / Setaraf</span></div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-navy-800 text-[13px]">12 hari perjalanan</span></div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-navy-800 text-[13px]">Muthawif bersertifikat</span></div>
+          </div>
+          <a href="https://wa.me/62811446667?text=Assalamualaikum%2C%20saya%20tertarik%20Paket%20VIP%20Cobig%20Tour%20(Rp%2040.500.000)" class="flex items-center justify-center gap-2 w-full border-2 border-navy-900 text-navy-900 font-display font-semibold text-sm py-3.5 rounded-xl mt-8 hover:bg-navy-900 hover:text-white transition-colors">
+            Pilih Paket Ini <i data-lucide="chevron-right" class="w-4 h-4 stroke-[1.5]"></i>
+          </a>
+        </div>
+      </div>
+      <p class="text-slate-500 text-[13px] italic text-center mt-12 reveal">Seluruh harga adalah final per jamaah. Tidak ada biaya tambahan tersembunyi di luar exclude yang tertera.</p>
+    </div>
+  </section>
+
+
+  <!-- SECTION 3c: Include / Exclude -->
+  <section class="bg-white py-[80px] md:py-[120px] lg:py-[160px]">
+    <div class="max-w-shell mx-auto px-5 md:px-16 text-center">
+      <p class="font-serif italic text-gold-700 text-lg reveal">Bagian 05 — Rincian</p>
+      <h2 class="font-display font-semibold text-navy-900 text-[28px] md:text-[42px] leading-[1.15] mt-4 reveal">
+        Apa saja yang Anda dapatkan.
+      </h2>
+    </div>
+    <div class="max-w-3xl mx-auto px-5 md:px-16 mt-14">
+      <!-- Include card -->
+      <div class="bg-cream border border-navy-100 rounded-2xl p-6 md:p-8 reveal">
+        <div class="flex items-center gap-2 mb-6">
+          <span class="w-8 h-8 rounded-full bg-gold-500/10 flex items-center justify-center"><i data-lucide="check" class="w-4 h-4 stroke-[2] text-gold-500"></i></span>
+          <h3 class="font-display font-semibold text-navy-900 text-base">Termasuk dalam semua paket</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
+          <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-navy-800 text-[14px]">Tiket pesawat PP Lion Air Direct</span></div>
+          <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-navy-800 text-[14px]">Visa umroh Saudi Arabia</span></div>
+          <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-navy-800 text-[14px]">Hotel Mekkah &amp; Madinah</span></div>
+          <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-navy-800 text-[14px]">Bus AC di tanah suci</span></div>
+          <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-navy-800 text-[14px]">Makan 3x sehari</span></div>
+          <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-navy-800 text-[14px]">Manasik intensif</span></div>
+          <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-navy-800 text-[14px]">Tour leader &amp; muthawif</span></div>
+          <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-navy-800 text-[14px]">Ziarah Mekkah &amp; Madinah</span></div>
+          <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-navy-800 text-[14px]">Perlengkapan umroh lengkap</span></div>
+          <div class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-navy-800 text-[14px]">Air Zam-Zam 5 Liter</span></div>
+          <div class="flex items-center gap-2.5 md:col-span-2"><i data-lucide="check" class="w-4 h-4 stroke-[1.5] text-gold-500 shrink-0"></i><span class="text-navy-800 text-[14px]">Tour Thaif &amp; kuliner Arab <span class="text-gold-700 text-[10px] uppercase tracking-wider font-semibold ml-1 bg-gold-100 px-1.5 py-0.5 rounded">EKSTRA</span></span></div>
+        </div>
+      </div>
+      <!-- Exclude card -->
+      <div class="bg-cream border border-navy-100 rounded-2xl p-6 md:p-8 mt-4 reveal">
+        <div class="flex items-center gap-2 mb-5">
+          <span class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center"><i data-lucide="x" class="w-4 h-4 stroke-[2] text-slate-400"></i></span>
+          <h3 class="font-display font-semibold text-navy-900 text-base">Tidak termasuk</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
+          <div class="flex items-center gap-2.5"><i data-lucide="x" class="w-4 h-4 stroke-[1.5] text-slate-400 shrink-0"></i><span class="text-slate-600 text-[14px]">Pembuatan paspor</span></div>
+          <div class="flex items-center gap-2.5"><i data-lucide="x" class="w-4 h-4 stroke-[1.5] text-slate-400 shrink-0"></i><span class="text-slate-600 text-[14px]">Vaksin meningitis</span></div>
+          <div class="flex items-center gap-2.5"><i data-lucide="x" class="w-4 h-4 stroke-[1.5] text-slate-400 shrink-0"></i><span class="text-slate-600 text-[14px]">Kelebihan bagasi</span></div>
+          <div class="flex items-center gap-2.5"><i data-lucide="x" class="w-4 h-4 stroke-[1.5] text-slate-400 shrink-0"></i><span class="text-slate-600 text-[14px]">Pengeluaran pribadi</span></div>
+        </div>
+        <p class="text-slate-400 text-xs italic mt-4">Kami bantu pengurusan paspor &amp; vaksin dengan biaya at-cost.</p>
+      </div>
+      <!-- CTA — konsultasi, bukan transfer -->
+      <div class="bg-navy-900 rounded-2xl p-6 md:p-8 mt-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4 reveal">
+        <div>
+          <p class="text-white font-display font-semibold text-lg">Siap mendaftar?</p>
+          <p class="text-white/60 text-sm mt-1">DP mulai Rp 3.000.000 — konsultasi dulu tanpa komitmen.</p>
+        </div>
+        <a href="https://wa.me/62811446667?text=Assalamualaikum%2C%20saya%20ingin%20konsultasi%20pendaftaran%20umroh%20Cobig%20Tour" class="group inline-flex items-center justify-center gap-2 bg-gold-500 text-navy-900 font-display font-bold text-sm px-6 py-3.5 rounded-xl hover:bg-gold-400 transition-all shrink-0">
+          Konsultasi Pendaftaran <i data-lucide="chevron-right" class="w-4 h-4 stroke-[2] group-hover:translate-x-1 transition-transform"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SECTION 3d: Value Stack -->
+  <section class="relative bg-navy-900 py-[80px] md:py-[120px] lg:py-[160px] overflow-hidden">
+    <div class="absolute inset-0 pattern-khatam opacity-[0.03]"></div>
+    <div class="relative max-w-shell mx-auto px-5 md:px-16">
+      <div class="text-center">
+        <p class="font-serif italic text-gold-400 text-lg reveal">Bagian 06 — Hitung Sendiri</p>
+        <h2 class="font-display font-semibold text-white text-[32px] md:text-[56px] leading-[1.1] tracking-tight max-w-[700px] mx-auto mt-4 reveal">
+          Lebih murah dari mengurus sendiri.
+        </h2>
+        <p class="text-white/60 text-[17px] leading-[1.75] max-w-prose mx-auto mt-6 reveal">
+          Berikut perbandingan biaya jika Anda mengatur sendiri setiap komponen perjalanan, versus paket Cobig Tour.
+        </p>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-12 mt-20">
+        <!-- Left: DIY -->
+        <div class="bg-white/5 rounded-2xl p-10 md:p-12 reveal">
+          <h3 class="text-white/70 font-display font-medium text-lg">Jika Atur Sendiri</h3>
+          <p class="text-white/40 text-[13px] mt-2">Estimasi harga pasaran</p>
+          <div class="mt-8 space-y-0">
+            <div class="flex justify-between py-3 border-b border-white/5"><span class="text-white/70 text-[15px]">Tiket pesawat PP</span><span class="text-white/70 font-display font-medium text-[15px] tabular-nums">Rp 14.000.000</span></div>
+            <div class="flex justify-between py-3 border-b border-white/5"><span class="text-white/70 text-[15px]">Visa umroh</span><span class="text-white/70 font-display font-medium text-[15px] tabular-nums">Rp 2.000.000</span></div>
+            <div class="flex justify-between py-3 border-b border-white/5"><span class="text-white/70 text-[15px]">Hotel Mekkah (5 malam)</span><span class="text-white/70 font-display font-medium text-[15px] tabular-nums">Rp 9.000.000</span></div>
+            <div class="flex justify-between py-3 border-b border-white/5"><span class="text-white/70 text-[15px]">Hotel Madinah (4 malam)</span><span class="text-white/70 font-display font-medium text-[15px] tabular-nums">Rp 7.000.000</span></div>
+            <div class="flex justify-between py-3 border-b border-white/5"><span class="text-white/70 text-[15px]">Transportasi bus AC</span><span class="text-white/70 font-display font-medium text-[15px] tabular-nums">Rp 1.500.000</span></div>
+            <div class="flex justify-between py-3 border-b border-white/5"><span class="text-white/70 text-[15px]">Makan harian</span><span class="text-white/70 font-display font-medium text-[15px] tabular-nums">Rp 2.500.000</span></div>
+            <div class="flex justify-between py-3 border-b border-white/5"><span class="text-white/70 text-[15px]">Manasik &amp; muthawif</span><span class="text-white/70 font-display font-medium text-[15px] tabular-nums">Rp 3.000.000</span></div>
+            <div class="flex justify-between py-3 border-b border-white/5"><span class="text-white/70 text-[15px]">Perlengkapan umroh</span><span class="text-white/70 font-display font-medium text-[15px] tabular-nums">Rp 1.500.000</span></div>
+            <div class="flex justify-between py-3"><span class="text-white/70 text-[15px]">Tour Thaif &amp; ziarah</span><span class="text-white/70 font-display font-medium text-[15px] tabular-nums">Rp 1.500.000</span></div>
+          </div>
+          <div class="bg-white/5 rounded py-5 px-6 mt-6 flex justify-between items-center">
+            <span class="text-white/90 font-display font-medium">Total Estimasi</span>
+            <span class="text-white/90 font-display font-bold text-xl tabular-nums">Rp 42.000.000</span>
+          </div>
+        </div>
+        <!-- Right: Cobig -->
+        <div class="relative bg-gradient-to-br from-gold-400 to-gold-500 text-navy-900 rounded-2xl p-10 md:p-12 overflow-hidden reveal" data-stagger="1">
+          <div class="absolute inset-0 pattern-khatam-light opacity-[0.04]"></div>
+          <div class="relative">
+            <h3 class="font-display font-semibold text-lg">Dengan Cobig Tour</h3>
+            <p class="text-navy-900/70 text-[13px] mt-2">Paket Ekonomis — semua include di kiri</p>
+            <div class="mt-10">
+              <p class="font-display font-medium text-2xl tabular-nums text-navy-900/50 line-through">Rp 42.000.000</p>
+              <p class="font-display font-bold text-[48px] md:text-[64px] tabular-nums leading-none mt-2">Rp 31.500.000</p>
+              <span class="inline-block bg-navy-900 text-gold-400 font-display font-semibold text-sm px-4 py-2 rounded-full mt-4">Hemat Rp 10.500.000 — 25%</span>
+            </div>
+            <div class="mt-12">
+              <p class="text-navy-900 text-[11px] uppercase tracking-[0.15em] font-display font-semibold">TERMASUK TANPA BIAYA TAMBAHAN</p>
+              <div class="mt-4 space-y-3">
+                <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-700"></span><span class="text-navy-900/85 text-sm">Pendampingan tour leader 24 jam</span></div>
+                <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-700"></span><span class="text-navy-900/85 text-sm">Group WhatsApp pra-keberangkatan</span></div>
+                <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-700"></span><span class="text-navy-900/85 text-sm">Tour Thaif &amp; kuliner khas Arab</span></div>
+              </div>
+            </div>
+            <a href="https://wa.me/62811446667?text=Assalamualaikum%2C%20saya%20ingin%20mendaftar%20Paket%20Ekonomis%20Cobig%20Tour" class="flex items-center justify-center gap-2 w-full bg-navy-900 text-gold-400 font-display font-semibold text-[15px] py-4 rounded mt-10 hover:bg-navy-800 transition-colors">
+              Daftar Paket Ekonomis Sekarang <i data-lucide="chevron-right" class="w-4 h-4 stroke-[1.5]"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION 7: Photo Gallery -->
+  <section id="galeri" class="bg-cream py-[80px] md:py-[120px] lg:py-[160px]">
+    <div class="max-w-shell mx-auto px-5 md:px-16">
+      <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+        <div>
+          <p class="font-serif italic text-gold-700 text-lg reveal">Bagian 07 — Dokumentasi</p>
+          <h2 class="font-display font-semibold text-navy-900 text-[32px] md:text-5xl leading-[1.1] max-w-[480px] mt-3 reveal">Senyum yang menjadi kebanggaan kami.</h2>
+        </div>
+        <a href="https://instagram.com/cobigtour" target="_blank" rel="noopener" class="flex items-center gap-1.5 text-slate-600 hover:text-navy-900 text-[15px] font-medium transition-colors reveal">
+          Ikuti dokumentasi lengkap di @cobigtour <i data-lucide="chevron-right" class="w-4 h-4 stroke-[1.5]"></i>
+        </a>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 mt-20">
+        <div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-navy-900 group cursor-pointer reveal">
+          <img src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=800&q=80" alt="Jamaah umroh di depan Ka'bah malam hari" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" data-fallback>
+          <div class="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <p class="absolute bottom-6 left-6 text-white text-[13px] max-w-[80%] opacity-0 group-hover:opacity-100 transition-opacity duration-500">Tawaf di Masjidil Haram</p>
+        </div>
+        <div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-navy-900 group cursor-pointer reveal" data-stagger="1">
+          <img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=800&q=80" alt="Masjid Nabawi Madinah" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" data-fallback>
+          <div class="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <p class="absolute bottom-6 left-6 text-white text-[13px] max-w-[80%] opacity-0 group-hover:opacity-100 transition-opacity duration-500">Sholat di Masjid Nabawi</p>
+        </div>
+        <div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-navy-900 group cursor-pointer reveal" data-stagger="2">
+          <img src="https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?w=800&q=80" alt="Jamaah umroh berdoa di Multazam" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" data-fallback>
+          <div class="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <p class="absolute bottom-6 left-6 text-white text-[13px] max-w-[80%] opacity-0 group-hover:opacity-100 transition-opacity duration-500">Berdoa di Multazam</p>
+        </div>
+        <div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-navy-900 group cursor-pointer reveal" data-stagger="3">
+          <img src="https://images.unsplash.com/photo-1564769625392-651b2c1d9569?w=800&q=80" alt="Jamaah umroh Sa'i antara Safa dan Marwah" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" data-fallback>
+          <div class="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <p class="absolute bottom-6 left-6 text-white text-[13px] max-w-[80%] opacity-0 group-hover:opacity-100 transition-opacity duration-500">Sa'i Safa Marwah</p>
+        </div>
+        <div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-navy-900 group cursor-pointer reveal" data-stagger="4">
+          <img src="https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=800&q=80" alt="Jamaah sholat berjamaah di Masjidil Haram" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" data-fallback>
+          <div class="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <p class="absolute bottom-6 left-6 text-white text-[13px] max-w-[80%] opacity-0 group-hover:opacity-100 transition-opacity duration-500">Sholat berjamaah</p>
+        </div>
+        <div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-navy-900 group cursor-pointer reveal" data-stagger="5">
+          <img src="https://images.unsplash.com/photo-1519817650390-64a93db51149?w=800&q=80" alt="Pemandangan Masjidil Haram dari atas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" data-fallback>
+          <div class="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <p class="absolute bottom-6 left-6 text-white text-[13px] max-w-[80%] opacity-0 group-hover:opacity-100 transition-opacity duration-500">Masjidil Haram dari atas</p>
+        </div>
+        <div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-navy-900 group cursor-pointer reveal" data-stagger="6">
+          <img src="https://images.unsplash.com/photo-1591266606406-1b9dd05cf3a4?w=800&q=80" alt="Jamaah umroh di Raudhah" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" data-fallback>
+          <div class="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <p class="absolute bottom-6 left-6 text-white text-[13px] max-w-[80%] opacity-0 group-hover:opacity-100 transition-opacity duration-500">Ziarah Raudhah</p>
+        </div>
+        <div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-navy-900 group cursor-pointer reveal" data-stagger="6">
+          <img src="https://images.unsplash.com/photo-1585036156171-384164a8c675?w=800&q=80" alt="Jamaah umroh di Jabal Rahmah" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" data-fallback>
+          <div class="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <p class="absolute bottom-6 left-6 text-white text-[13px] max-w-[80%] opacity-0 group-hover:opacity-100 transition-opacity duration-500">Ziarah Jabal Rahmah</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SECTION 8: Testimonials -->
+  <section id="testimoni" class="relative bg-navy-900 py-[60px] md:py-[80px] lg:py-[100px] overflow-hidden">
+    <div class="absolute inset-0 pattern-khatam opacity-[0.03]"></div>
+    <div class="relative max-w-shell mx-auto px-5 md:px-16 text-center">
+      <p class="font-serif italic text-gold-400 text-lg reveal">Bagian 08 — Testimoni</p>
+      <h2 class="font-display font-semibold text-white text-[26px] md:text-[42px] leading-[1.15] max-w-[600px] mx-auto mt-4 reveal">
+        Apa kata jamaah yang sudah berangkat bersama kami.
+      </h2>
+    </div>
+    <div class="relative max-w-shell mx-auto px-5 md:px-16 mt-14">
+    <div class="relative mt-14 overflow-hidden">
+      <div class="testimonial-marquee flex gap-4 animate-marquee w-max">
+        <div class="w-[280px] md:w-[300px] bg-white/[0.06] border border-white/10 rounded-2xl p-6 shrink-0"><div class="flex gap-0.5 text-gold-500"><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i></div><p class="text-white/90 text-[14px] leading-[1.6] mt-3">"Hotel Safwa hanya beberapa puluh meter dari Masjidil Haram. Lansia tidak kelelahan. Pendampingannya luar biasa."</p><div class="mt-4 pt-3 border-t border-white/10"><p class="text-white font-display font-semibold text-sm">H. Andi Mappiare</p><p class="text-white/50 text-xs mt-0.5">58 thn &middot; Makassar</p></div></div>
+        <div class="w-[280px] md:w-[300px] bg-white/[0.06] border border-white/10 rounded-2xl p-6 shrink-0"><div class="flex gap-0.5 text-gold-500"><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i></div><p class="text-white/90 text-[14px] leading-[1.6] mt-3">"Manasiknya bukan formalitas. Tim Cobig jelaskan setiap rukun sesuai sunnah dengan dalil yang jelas."</p><div class="mt-4 pt-3 border-t border-white/10"><p class="text-white font-display font-semibold text-sm">Ustadzah Nurhayati</p><p class="text-white/50 text-xs mt-0.5">45 thn &middot; Gowa</p></div></div>
+        <div class="w-[280px] md:w-[300px] bg-white/[0.06] border border-white/10 rounded-2xl p-6 shrink-0"><div class="flex gap-0.5 text-gold-500"><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i></div><p class="text-white/90 text-[14px] leading-[1.6] mt-3">"Umroh kedua bersama Cobig. Konsisten kualitasnya. Tour leader sudah seperti keluarga sendiri."</p><div class="mt-4 pt-3 border-t border-white/10"><p class="text-white font-display font-semibold text-sm">Pak Rusdi &amp; Bu Aminah</p><p class="text-white/50 text-xs mt-0.5">53 &amp; 50 thn &middot; Pare-Pare</p></div></div>
+        <div class="w-[280px] md:w-[300px] bg-white/[0.06] border border-white/10 rounded-2xl p-6 shrink-0"><div class="flex gap-0.5 text-gold-500"><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i></div><p class="text-white/90 text-[14px] leading-[1.6] mt-3">"Saya 62 tahun, pertama kali umroh. Tim Cobig dampingi dari awal sampai pulang. Muthawif sabar."</p><div class="mt-4 pt-3 border-t border-white/10"><p class="text-white font-display font-semibold text-sm">Hj. Halimah Daeng Tene</p><p class="text-white/50 text-xs mt-0.5">62 thn &middot; Makassar</p></div></div>
+        <div class="w-[280px] md:w-[300px] bg-white/[0.06] border border-white/10 rounded-2xl p-6 shrink-0"><div class="flex gap-0.5 text-gold-500"><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i></div><p class="text-white/90 text-[14px] leading-[1.6] mt-3">"Dokumen visa dan paspor diurus semua. Tinggal siapkan niat dan fisik. Sangat membantu."</p><div class="mt-4 pt-3 border-t border-white/10"><p class="text-white font-display font-semibold text-sm">Ir. Fadli Rahman</p><p class="text-white/50 text-xs mt-0.5">47 thn &middot; Makassar</p></div></div>
+        <div class="w-[280px] md:w-[300px] bg-white/[0.06] border border-white/10 rounded-2xl p-6 shrink-0"><div class="flex gap-0.5 text-gold-500"><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i><i data-lucide="star" class="w-4 h-4 fill-gold-500 stroke-[1.5]"></i></div><p class="text-white/90 text-[14px] leading-[1.6] mt-3">"Harga transparan, tidak ada biaya tambahan. Yang tertulis di kontrak itulah yang didapatkan."</p><div class="mt-4 pt-3 border-t border-white/10"><p class="text-white font-display font-semibold text-sm">Dr. Siti Rahmawati</p><p class="text-white/50 text-xs mt-0.5">51 thn &middot; Bone</p></div></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SECTION 9: FAQ -->
+  <section id="faq" class="bg-cream py-[80px] md:py-[120px] lg:py-[160px]">
+    <div class="max-w-shell mx-auto px-5 md:px-16">
+      <!-- Centered header -->
+      <div class="text-center max-w-[640px] mx-auto">
+        <p class="font-serif italic text-gold-700 text-lg reveal">Bagian 09 — Pertanyaan</p>
+        <h2 class="font-display font-semibold text-navy-900 text-[28px] md:text-[42px] leading-[1.15] mt-4 reveal">
+          Pertanyaan yang sering diajukan
+        </h2>
+        <p class="text-slate-500 text-[15px] leading-[1.7] mt-4 reveal">
+          Belum terjawab? <a href="https://wa.me/62811446667?text=Assalamualaikum%20Cobig%20Tour%2C%20saya%20mau%20bertanya" class="text-gold-700 font-medium hover:underline">Chat admin via WhatsApp</a>
+        </p>
+      </div>
+      <!-- FAQ accordion in card -->
+      <div class="max-w-[760px] mx-auto mt-14 bg-white rounded-2xl shadow-soft overflow-hidden">
+        <!-- FAQ 1 -->
+        <div class="faq-item border-b border-navy-100/50">
+          <button class="faq-btn flex justify-between items-center w-full py-5 px-6 md:px-8 text-left gap-4" aria-expanded="false" aria-controls="faq-1">
+            <span class="font-display font-semibold text-navy-900 text-[15px] md:text-base">Kenapa Cobig lebih mahal dari travel Rp 25–28 jutaan?</span>
+            <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 stroke-[1.5] text-slate-400 shrink-0"></i>
+          </button>
+          <div id="faq-1" class="faq-answer">
+            <p class="text-slate-600 text-[15px] leading-[1.7] pb-5 px-6 md:px-8">Paket di bawah Rp 28 juta umumnya menggunakan penerbangan transit, hotel jauh dari Haram, atau memiliki biaya tambahan tidak tertera. Total biaya akhir sering justru di atas Rp 33 juta. Cobig: harga di brosur = harga final.</p>
+          </div>
+        </div>
+        <!-- FAQ 2 -->
+        <div class="faq-item border-b border-navy-100/50">
+          <button class="faq-btn flex justify-between items-center w-full py-5 px-6 md:px-8 text-left gap-4" aria-expanded="false" aria-controls="faq-2">
+            <span class="font-display font-semibold text-navy-900 text-[15px] md:text-base">Cocok untuk jamaah yang baru pertama kali umroh?</span>
+            <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 stroke-[1.5] text-slate-400 shrink-0"></i>
+          </button>
+          <div id="faq-2" class="faq-answer">
+            <p class="text-slate-600 text-[15px] leading-[1.7] pb-5 px-6 md:px-8">Justru paling cocok. Manasik intensif 2x sebelum keberangkatan, group WhatsApp untuk tanya-jawab, dan muthawif sabar menjelaskan setiap rukun. Sekitar 70% jamaah kami adalah pemula.</p>
+          </div>
+        </div>
+        <!-- FAQ 3 -->
+        <div class="faq-item border-b border-navy-100/50">
+          <button class="faq-btn flex justify-between items-center w-full py-5 px-6 md:px-8 text-left gap-4" aria-expanded="false" aria-controls="faq-3">
+            <span class="font-display font-semibold text-navy-900 text-[15px] md:text-base">Bagaimana sistem pembayaran? Bisa dicicil?</span>
+            <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 stroke-[1.5] text-slate-400 shrink-0"></i>
+          </button>
+          <div id="faq-3" class="faq-answer">
+            <p class="text-slate-600 text-[15px] leading-[1.7] pb-5 px-6 md:px-8">DP Rp 3 juta ke BSI atau Mandiri. Pelunasan maks 45 hari sebelum keberangkatan. Cicilan terjadwal bisa didiskusikan langsung dengan admin.</p>
+          </div>
+        </div>
+        <!-- FAQ 4 -->
+        <div class="faq-item border-b border-navy-100/50">
+          <button class="faq-btn flex justify-between items-center w-full py-5 px-6 md:px-8 text-left gap-4" aria-expanded="false" aria-controls="faq-4">
+            <span class="font-display font-semibold text-navy-900 text-[15px] md:text-base">Apa perbedaan paket Ekonomis sampai VIP?</span>
+            <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 stroke-[1.5] text-slate-400 shrink-0"></i>
+          </button>
+          <div id="faq-4" class="faq-answer">
+            <p class="text-slate-600 text-[15px] leading-[1.7] pb-5 px-6 md:px-8">Perbedaan utama di hotel — semakin tinggi paket, semakin dekat ke Masjidil Haram. Layanan inti (penerbangan, manasik, muthawif, ziarah, makan) sama untuk semua paket.</p>
+          </div>
+        </div>
+        <!-- FAQ 5 -->
+        <div class="faq-item border-b border-navy-100/50">
+          <button class="faq-btn flex justify-between items-center w-full py-5 px-6 md:px-8 text-left gap-4" aria-expanded="false" aria-controls="faq-5">
+            <span class="font-display font-semibold text-navy-900 text-[15px] md:text-base">Apakah Cobig benar-benar Akreditasi A Kemenag?</span>
+            <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 stroke-[1.5] text-slate-400 shrink-0"></i>
+          </button>
+          <div id="faq-5" class="faq-answer">
+            <p class="text-slate-600 text-[15px] leading-[1.7] pb-5 px-6 md:px-8">Ya. Izin PPIU resmi No. 17012200308230005. Bisa diverifikasi di situs Kementerian Agama RI.</p>
+          </div>
+        </div>
+        <!-- FAQ 6 -->
+        <div class="faq-item border-b border-navy-100/50">
+          <button class="faq-btn flex justify-between items-center w-full py-5 px-6 md:px-8 text-left gap-4" aria-expanded="false" aria-controls="faq-6">
+            <span class="font-display font-semibold text-navy-900 text-[15px] md:text-base">Bagaimana jika batal? Apakah ada refund?</span>
+            <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 stroke-[1.5] text-slate-400 shrink-0"></i>
+          </button>
+          <div id="faq-6" class="faq-answer">
+            <p class="text-slate-600 text-[15px] leading-[1.7] pb-5 px-6 md:px-8">Kebijakan refund tertulis dalam kontrak. Pembatalan &gt;30 hari: potongan administrasi. Dalam 30 hari: refund parsial. Detail lengkap saat konsultasi.</p>
+          </div>
+        </div>
+        <!-- FAQ 7 -->
+        <div class="faq-item border-b border-navy-100/50">
+          <button class="faq-btn flex justify-between items-center w-full py-5 px-6 md:px-8 text-left gap-4" aria-expanded="false" aria-controls="faq-7">
+            <span class="font-display font-semibold text-navy-900 text-[15px] md:text-base">Bagaimana keamanan untuk jamaah lansia?</span>
+            <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 stroke-[1.5] text-slate-400 shrink-0"></i>
+          </button>
+          <div id="faq-7" class="faq-answer">
+            <p class="text-slate-600 text-[15px] leading-[1.7] pb-5 px-6 md:px-8">40% jamaah kami 55+. Kursi roda gratis, hotel dekat masjid, dan group khusus pendamping lansia tersedia.</p>
+          </div>
+        </div>
+        <!-- FAQ 8 -->
+        <div class="faq-item">
+          <button class="faq-btn flex justify-between items-center w-full py-5 px-6 md:px-8 text-left gap-4" aria-expanded="false" aria-controls="faq-8">
+            <span class="font-display font-semibold text-navy-900 text-[15px] md:text-base">Apakah ada paket Haji Khusus?</span>
+            <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 stroke-[1.5] text-slate-400 shrink-0"></i>
+          </button>
+          <div id="faq-8" class="faq-answer">
+            <p class="text-slate-600 text-[15px] leading-[1.7] pb-5 px-6 md:px-8">Ya. Kuota terbatas dan periode berbeda — konsultasikan langsung via WhatsApp untuk info tahun berjalan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SECTION 10: Registration Form -->
+  <section id="daftar" class="bg-navy-900 py-[80px] md:py-[120px] lg:py-[160px]">
+    <div class="max-w-shell mx-auto px-5 md:px-16">
+      <div class="grid lg:grid-cols-12 gap-16">
+        <!-- Left -->
+        <div class="lg:col-span-5">
+          <p class="font-serif italic text-gold-400 text-lg reveal">Bagian 10 — Pendaftaran</p>
+          <h2 class="font-display font-semibold text-white text-[26px] md:text-[42px] leading-[1.15] max-w-[420px] mt-4 reveal">
+            Mulai langkah pertama Anda.
+          </h2>
+          <p class="text-white/70 text-[17px] leading-[1.75] max-w-prose mt-8 reveal">
+            Isi formulir di samping atau langsung hubungi admin kami via WhatsApp. Tim Cobig akan menghubungi Anda dalam 1x24 jam untuk diskusi paket dan informasi keberangkatan terdekat.
+          </p>
+          <div class="mt-12 space-y-6 reveal">
+            <div class="flex items-start gap-4">
+              <i data-lucide="phone" class="w-5 h-5 stroke-[1.5] text-gold-400 shrink-0 mt-1"></i>
+              <div>
+                <p class="text-white/50 text-xs uppercase tracking-[0.15em]">Telepon / WhatsApp</p>
+                <p class="text-white font-display font-medium text-[17px] mt-1">0811 44 66667</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <i data-lucide="mail" class="w-5 h-5 stroke-[1.5] text-gold-400 shrink-0 mt-1"></i>
+              <div>
+                <p class="text-white/50 text-xs uppercase tracking-[0.15em]">Email</p>
+                <p class="text-white font-display font-medium text-[17px] mt-1">cobigtour.travel@gmail.com</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <i data-lucide="map-pin" class="w-5 h-5 stroke-[1.5] text-gold-400 shrink-0 mt-1"></i>
+              <div>
+                <p class="text-white/50 text-xs uppercase tracking-[0.15em]">Kantor</p>
+                <p class="text-white font-display font-medium text-[17px] mt-1">Jl. Baji Gau No. 32i, Makassar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right: Form -->
+        <div class="lg:col-span-7 reveal">
+          <form id="registration-form" class="bg-white rounded-3xl p-6 md:p-10 shadow-lift">
+            <div class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <div class="relative group">
+                  <input type="text" id="nama" name="nama" required placeholder=" " class="form-input peer w-full bg-cream border-2 border-transparent rounded-xl pt-6 pb-3 px-5 text-navy-900 text-[15px] outline-none transition-all focus:border-gold-500 focus:bg-white">
+                  <label for="nama" class="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400 text-sm pointer-events-none transition-all peer-focus:top-3.5 peer-focus:text-[11px] peer-focus:text-gold-700 peer-focus:translate-y-0 peer-[:not(:placeholder-shown)]:top-3.5 peer-[:not(:placeholder-shown)]:text-[11px] peer-[:not(:placeholder-shown)]:translate-y-0 peer-[:not(:placeholder-shown)]:text-navy-800">Nama Lengkap</label>
+                </div>
+                <div class="relative group">
+                  <input type="tel" id="whatsapp" name="whatsapp" required placeholder=" " class="form-input peer w-full bg-cream border-2 border-transparent rounded-xl pt-6 pb-3 px-5 text-navy-900 text-[15px] outline-none transition-all focus:border-gold-500 focus:bg-white">
+                  <label for="whatsapp" class="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400 text-sm pointer-events-none transition-all peer-focus:top-3.5 peer-focus:text-[11px] peer-focus:text-gold-700 peer-focus:translate-y-0 peer-[:not(:placeholder-shown)]:top-3.5 peer-[:not(:placeholder-shown)]:text-[11px] peer-[:not(:placeholder-shown)]:translate-y-0 peer-[:not(:placeholder-shown)]:text-navy-800">Nomor WhatsApp</label>
+                </div>
+              </div>
+              <div class="relative group">
+                <input type="email" id="email" name="email" placeholder=" " class="form-input peer w-full bg-cream border-2 border-transparent rounded-xl pt-6 pb-3 px-5 text-navy-900 text-[15px] outline-none transition-all focus:border-gold-500 focus:bg-white">
+                <label for="email" class="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400 text-sm pointer-events-none transition-all peer-focus:top-3.5 peer-focus:text-[11px] peer-focus:text-gold-700 peer-focus:translate-y-0 peer-[:not(:placeholder-shown)]:top-3.5 peer-[:not(:placeholder-shown)]:text-[11px] peer-[:not(:placeholder-shown)]:translate-y-0 peer-[:not(:placeholder-shown)]:text-navy-800">Email (opsional)</label>
+              </div>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div class="relative custom-select-wrap">
+                  <label class="absolute left-5 top-2.5 text-[11px] text-gold-700 pointer-events-none z-10">Pilih Paket</label>
+                  <button type="button" class="custom-select-btn w-full bg-cream border-2 border-transparent rounded-xl pt-6 pb-3 px-5 text-navy-900 text-[15px] text-left outline-none transition-all flex items-center justify-between focus:border-gold-500 focus:bg-white" data-target="paket-dropdown">
+                    <span class="select-value text-navy-900">— Pilih paket —</span>
+                    <i data-lucide="chevron-down" class="w-4 h-4 stroke-[1.5] text-slate-400 transition-transform"></i>
+                  </button>
+                  <div id="paket-dropdown" class="custom-dropdown hidden absolute top-full left-0 right-0 mt-2 bg-white border border-navy-100 rounded-xl shadow-lift z-20 overflow-hidden">
+                    <div class="py-2">
+                      <div class="custom-option px-5 py-3 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer transition-colors" data-value="Ekonomis">Ekonomis — Rp 31.500.000</div>
+                      <div class="custom-option px-5 py-3 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer transition-colors" data-value="Premium">Premium — Rp 34.500.000</div>
+                      <div class="custom-option px-5 py-3 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer transition-colors" data-value="Executive">Executive — Rp 36.500.000</div>
+                      <div class="custom-option px-5 py-3 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer transition-colors" data-value="VIP">VIP — Rp 40.500.000</div>
+                      <div class="custom-option px-5 py-3 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer transition-colors" data-value="Belum yakin">Belum yakin (konsultasi dulu)</div>
+                    </div>
+                  </div>
+                  <input type="hidden" id="paket" name="paket" required>
+                </div>
+                <div class="relative custom-select-wrap">
+                  <label class="absolute left-5 top-2.5 text-[11px] text-gold-700 pointer-events-none z-10">Bulan Keberangkatan</label>
+                  <button type="button" class="custom-select-btn w-full bg-cream border-2 border-transparent rounded-xl pt-6 pb-3 px-5 text-navy-900 text-[15px] text-left outline-none transition-all flex items-center justify-between focus:border-gold-500 focus:bg-white" data-target="bulan-dropdown">
+                    <span class="select-value text-navy-900">— Pilih bulan —</span>
+                    <i data-lucide="chevron-down" class="w-4 h-4 stroke-[1.5] text-slate-400 transition-transform"></i>
+                  </button>
+                  <div id="bulan-dropdown" class="custom-dropdown hidden absolute top-full left-0 right-0 mt-2 bg-white border border-navy-100 rounded-xl shadow-lift z-20 overflow-hidden">
+                    <div class="py-2">
+                      <div class="custom-option px-5 py-3 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer transition-colors" data-value="Juli 2026">Juli 2026</div>
+                      <div class="custom-option px-5 py-3 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer transition-colors" data-value="Agustus 2026">Agustus 2026</div>
+                      <div class="custom-option px-5 py-3 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer transition-colors" data-value="September 2026">September 2026</div>
+                      <div class="custom-option px-5 py-3 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer transition-colors" data-value="Oktober 2026">Oktober 2026</div>
+                      <div class="custom-option px-5 py-3 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer transition-colors" data-value="November 2026">November 2026</div>
+                      <div class="custom-option px-5 py-3 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer transition-colors" data-value="Desember 2026">Desember 2026</div>
+                      <div class="custom-option px-5 py-3 text-sm text-navy-900 hover:bg-gold-100 cursor-pointer transition-colors" data-value="Fleksibel">Fleksibel</div>
+                    </div>
+                  </div>
+                  <input type="hidden" id="bulan" name="bulan" required>
+                </div>
+              </div>
+              <div class="relative">
+                <textarea id="catatan" name="catatan" rows="3" placeholder=" " class="form-input peer w-full bg-cream border-2 border-transparent rounded-xl pt-7 pb-3 px-5 text-navy-900 text-[15px] outline-none transition-all resize-none focus:border-gold-500 focus:bg-white"></textarea>
+                <label for="catatan" class="absolute left-5 top-4 text-slate-400 text-sm pointer-events-none transition-all peer-focus:top-2 peer-focus:text-[11px] peer-focus:text-gold-700 peer-[:not(:placeholder-shown)]:top-2 peer-[:not(:placeholder-shown)]:text-[11px]">Catatan / Pertanyaan (opsional)</label>
+              </div>
+              <button type="submit" class="group relative w-full overflow-hidden bg-gradient-to-r from-gold-500 to-gold-400 text-navy-900 font-display font-bold text-base py-5 rounded-xl shadow-soft hover:shadow-lift transition-all duration-300 hover:-translate-y-0.5">
+                <span class="relative z-10 flex items-center justify-center gap-2">
+                  Kirim &amp; Lanjut ke WhatsApp
+                  <svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 group-hover:translate-x-1 transition-transform"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </span>
+                <span class="absolute inset-0 bg-gold-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+              </button>
+            </div>
+            <p class="text-slate-400 text-[13px] text-center mt-6 flex items-center justify-center gap-1.5">
+              <i data-lucide="shield-check" class="w-3.5 h-3.5 stroke-[1.5]"></i> Data Anda aman dan hanya digunakan untuk konsultasi paket.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-navy-950 py-20 md:py-28">
+    <div class="max-w-shell mx-auto px-5 md:px-16">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-8">
+        <!-- Brand -->
+        <div class="lg:col-span-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 flex items-center justify-center"><svg viewBox="0 0 40 40" fill="none" class="w-10 h-10"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" class="text-gold-500"/><path d="M28 12C25 9 21 8 17 9C12 10.5 9 15 9 20C9 25 12 29.5 17 31C21 32 25 31 28 28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" class="text-white"/><path d="M28 12L32 10M28 12L30 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="text-gold-500"/><path d="M28 28L32 30M28 28L30 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="text-gold-500"/></svg></div>
+            <span class="font-display font-bold text-white text-base tracking-[0.08em]">COBIG TOUR</span>
+          </div>
+          <p class="text-white/50 text-[13px] mt-2">PT. Cobig Indonesia Kreatif</p>
+          <p class="text-white/60 text-[15px] leading-[1.6] mt-6 max-w-[300px]">Bimbingan umroh dan haji khusus sesuai Al-Qur'an dan Sunnah, dari Makassar untuk seluruh Indonesia.</p>
+          <div class="border border-white/10 rounded-lg p-4 max-w-[300px] mt-8 flex items-start gap-3">
+            <i data-lucide="shield-check" class="w-5 h-5 stroke-[1.5] text-gold-400 shrink-0"></i>
+            <div>
+              <p class="text-white text-[13px]">Akreditasi A Kemenag RI</p>
+              <p class="text-white/50 text-[11px] mt-0.5">Izin PPIU 17012200308230005</p>
+            </div>
+          </div>
+        </div>
+        <!-- Navigasi -->
+        <div class="lg:col-span-2">
+          <p class="text-white text-xs uppercase tracking-[0.15em] font-display font-semibold">NAVIGASI</p>
+          <div class="flex flex-col gap-3 mt-6">
+            <a href="#" class="text-white/60 hover:text-white text-sm transition-colors">Beranda</a>
+            <a href="#paket" class="text-white/60 hover:text-white text-sm transition-colors">Paket</a>
+            <a href="#keunggulan" class="text-white/60 hover:text-white text-sm transition-colors">Keunggulan</a>
+            <a href="#galeri" class="text-white/60 hover:text-white text-sm transition-colors">Galeri</a>
+            <a href="#testimoni" class="text-white/60 hover:text-white text-sm transition-colors">Testimoni</a>
+            <a href="#faq" class="text-white/60 hover:text-white text-sm transition-colors">FAQ</a>
+            <a href="#daftar" class="text-white/60 hover:text-white text-sm transition-colors">Pendaftaran</a>
+          </div>
+        </div>
+        <!-- Kontak -->
+        <div class="lg:col-span-3">
+          <p class="text-white text-xs uppercase tracking-[0.15em] font-display font-semibold">KONTAK</p>
+          <div class="mt-6 space-y-5">
+            <div><p class="text-gold-400 text-[11px] uppercase tracking-[0.15em]">Telepon / WA</p><p class="text-white text-sm mt-1">0811 44 66667</p></div>
+            <div><p class="text-gold-400 text-[11px] uppercase tracking-[0.15em]">Email</p><p class="text-white text-sm mt-1">cobigtour.travel@gmail.com</p></div>
+            <div><p class="text-gold-400 text-[11px] uppercase tracking-[0.15em]">Kantor</p><p class="text-white text-sm mt-1">Jl. Baji Gau No. 32i,<br>Makassar, Sulsel</p></div>
+          </div>
+        </div>
+        <!-- Sosial & Bank -->
+        <div class="lg:col-span-3">
+          <p class="text-white text-xs uppercase tracking-[0.15em] font-display font-semibold">IKUTI KAMI</p>
+          <div class="flex gap-3 mt-6">
+            <a href="https://instagram.com/cobigtour" target="_blank" rel="noopener" class="w-10 h-10 border border-white/10 rounded flex items-center justify-center text-white/60 hover:bg-gold-500 hover:text-navy-900 hover:border-gold-500 transition-colors" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://youtube.com/@Cobigtourofficial" target="_blank" rel="noopener" class="w-10 h-10 border border-white/10 rounded flex items-center justify-center text-white/60 hover:bg-gold-500 hover:text-navy-900 hover:border-gold-500 transition-colors" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-5 h-5"><rect x="2" y="4" width="20" height="16" rx="4"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://tiktok.com/@cobig_tour.official" target="_blank" rel="noopener" class="w-10 h-10 border border-white/10 rounded flex items-center justify-center text-white/60 hover:bg-gold-500 hover:text-navy-900 hover:border-gold-500 transition-colors" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.88 2.89 2.89 0 01-2.88-2.88 2.89 2.89 0 012.88-2.88c.28 0 .56.04.82.11v-3.5a6.37 6.37 0 00-.82-.05A6.34 6.34 0 003.15 15.6a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V9.4a8.16 8.16 0 004.76 1.52v-3.4a4.85 4.85 0 01-1-.83z"/></svg>
+            </a>
+          </div>
+          <p class="text-white text-xs uppercase tracking-[0.15em] font-display font-semibold mt-8">BANK PENDAFTARAN</p>
+          <div class="mt-6 space-y-3 text-white/70 text-[13px]">
+            <p>BSI &middot; 7 2345 98 184</p>
+            <p>Mandiri &middot; 174 00 441 80 800</p>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom bar -->
+      <div class="border-t border-white/10 mt-20 pt-8 flex flex-col md:flex-row md:justify-between gap-4">
+        <p class="text-white/40 text-[13px]">&copy; 2026 PT. Cobig Indonesia Kreatif. Seluruh hak cipta dilindungi.</p>
+        <div class="flex gap-6 text-white/40 text-[13px]">
+          <a href="#" class="hover:text-white transition-colors">Kebijakan Privasi</a>
+          <a href="#" class="hover:text-white transition-colors">Syarat &amp; Ketentuan</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/62811446667?text=Assalamualaikum%20Cobig%20Tour" target="_blank" rel="noopener" class="fixed bottom-5 right-5 md:bottom-6 md:right-6 z-40 group" aria-label="Chat WhatsApp">
+    <span class="absolute inset-0 w-14 h-14 md:w-[60px] md:h-[60px] rounded-full bg-[#25D366] wa-pulse"></span>
+    <span class="relative flex items-center justify-center w-14 h-14 md:w-[60px] md:h-[60px] rounded-full bg-[#25D366] shadow-lift">
+      <svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-white">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </span>
+    <span class="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-navy-900 text-white text-xs font-medium px-3 py-2 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity hidden md:block">Chat WhatsApp</span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
